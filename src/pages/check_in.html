@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAG Airlines</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">     -->
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/ux_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="tag-bg-bd ">
+        <header class=" container tag-header-basic">
+            <div class="col-4">
+                <img src="../../public/images/tag-airlines.png" alt="tag-airlines" srcset="" width="100%">
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="tag-flex-sm-wrap col-12">
+            <div class="col-md-5 col-lg-5 col-sm-12">
+                <div class="tag-salesWrp-global">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb tag-sales">
+                                <li itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url">
+                                        <span itemprop="title">Tu vuelo &gt; </span>
+                                    </a>
+                                </li>
+                                <li itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url">
+                                        <span itemprop="title"> Tu reservación &gt; </span>
+                                    </a>
+                                </li>
+                                <li class="active" itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url" class="tag-sales-active">
+                                        <span itemprop="title"> Check-in</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container tag-info-fly">
+        <div class="col-md-6 col-sm-12">
+            <h1 class="w-100 tag-txt-blue-dark">¡Hola!<span class="tag-txt-blue-light"> Uriel</span></h1>
+            <p class="w-100">Uno de tus destinos está listo para poder realizar check-in</p>
+        </div>
+        <div class="col-md-6 col-sm-12 tag-margin-0-auto">
+            <h3 class="w-100 tag-info-fly-subtitle">Vuelo de ida</h3>
+        </div>
+        <!-- Contenedor para Vuelos de salida-->
+        <div id="tagFlyTerminal">
+            <div id="tagTerminal" class="col-12 tag-flex-sm-wrap">
+                <div class="col-md-3 col-sm-12 tag-info-fly-date">
+                    <span class="tag-info-fly-day tag-txt-blue-light">Sábado, 26 de feb 2022</span>
+                </div>
+                <div class="col-md-9 col-sm-12 d-flex tag-box-info-fly">
+                    <div class="col-9 col-lg-10">
+                        <div class="col-12 tag-box-info-fly-wrap">
+                            <div class="tag-flex-sm-wrap tag-border-botom col-12">
+                                <div class="col-md-4 col-sm-12 tag-box-info-fly-terminal">
+                                    <span id="tagOutputTerminal" class="w-100 tag-txt-blue-dark">Guatemala - <span class="tag-txt-blue-light">GUA</span></span>
+                                    <p id="tagDeapureTime" class="w-100 tag-txt-blue-light">Sábado 26 de feb 2022</p>
+                                    <span id="tagDepartureTime" class="w-100">22:20 h</span>
+                                </div>
+                                <div class="col-md-4 col-sm-12 tag-box-info-fly-time">
+                                    <div class="tag-flex-md-wrap">
+                                        <p class="tag-flex-md-wrap tag-tag-gray-fly">
+                                            <span class="w-100">Tiempo de vuelo </span>
+                                            <span class="w-100">
+                                                <img class="" src="../../public/images/icons/ico_flight_time.svg" alt="ico_flight_time" srcset="">
+                                            </span>
+                                            <span id="tagFlyTime" class="w-100">40m</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 tag-box-info-fly-arrival">
+                                    <span id="tagArrivalTerminal" class="w-100 tag-txt-blue-dark">Cancún - <span class="tag-txt-blue-light">CUN</span></span>
+                                    <p id="tagDayArrival" class="w-100 tag-txt-blue-light">Sábado 26 de feb 2022</p>
+                                    <span id="tagHourArrival" class="w-100">23:00 h</span>
+                                </div>
+                            </div>
+                            <div class="tag-flex-sm-wrap col-12">
+                                <div class="col-12 d-flex">
+                                    <div class="col-10 tag-box-info-fly-airline">
+                                        <p>Vuelo: <span class="tag-txt-blue-light">5U120</span></p>
+                                        <p>Avión: <span class="tag-txt-blue-light">Saab 340B</span></p>
+                                        <p class="d-flex">Operado por: <span class="tag-txt-blue-light">Tag Airline</span><span><img src="../../public/images/icons/ico_flights_operado-tag.svg" alt="" srcset=""></span></p>
+                                    </div>
+                                    <div class="tag-box-info-fly-airline-checkbox">
+                                        <div class="form-check form-switch tag-check-big">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDesk"
+                                                onchange="javascript:showContent()">
+                                            <label class="form-check-label" for="flexSwitchCheckCheckedDesk">Check-in</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 tag-box-info-fly-bags tag-bg-ultra-light ">
+                            <div class="tag-flex-sm-wrap col-12">
+                                <p class="w-100">Tarifa: <span class="tag-txt-blue-light">Light</span></p>
+                                <p class="w-100"><span><img class="tag-img-eqipaje-mano" src="../../public/images/icons/fare/ico_fares_hand-baggage.svg" alt="bag" srcset=""></span> Equipaje de mano <span class="tag-txt-blue-light">1pz. 20 lb / 9kg</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 tag-box-info-fly-img-date">
+                        <p class="tag-box-info-fly-img-date-text">
+                            <span class="w-100 tag-box-info-fly-img-date-day">Sábado</span>
+                            <span class="w-100 tag-box-info-fly-img-date-number-day">26</span>
+                            <span class="w-100 tag-box-info-fly-img-date-month">Feb 2022</span>
+                        </p>
+                        <img src="../../public/images/tag-playa.png" alt="tag-playa" width="100%">
+                    </div>
+                </div>
+            </div>
+    
+            <div id="tagPassengers" class="col-12 tag-flex-sm-wrap tag-passengers" style="display: none;">
+                <div class="col-md-3 col-sm-12 tag-info-fly-date">
+                    <span class="tag-info-fly-day tag-txt-blue-light">Pasajeros</span>
+                    <p>Selecciona los nombres de los pasajeros de los cuales deseas hacer el check in</p>
+                </div>
+                <div class="col-md-9 col-sm-12 d-flex tag-box-info-fly tag-passengers-add">
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Check-in</th>
+                                    <th scope="col">Pasajero</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="tag-box-info-fly-airline-checkbox">
+                                            <div class="form-check form-switch tag-check-medium">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd1"
+                                                    onchange="javascript:hidenInput()">
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-flex-sd-wrap tag-passengers-add-info">
+                                                            <p class="w-100 tag-passengers-add-info-name" >Uriel Soriano Moreno</p>
+                                                            <a class="w-100 tag-passengers-add-info-mail tag-txt-blue-light" href="">uriel.smu@me.com</a>
+                                                            <p class="w-100 tag-passengers-add-info-type tag-txt-blue-light" >Adulto</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex align-items-end">
+                                                            <div class="tag-passengers-add-dates">
+                                                                <a class="w-100 tag-txt-blue-light" href="">Cambiar</a>
+                                                                <br>
+                                                                <a class="w-100 tag-txt-blue-light" href="">Correo electrónico</a>
+                                                            </div>
+                                                            <div class="form-floating mb-3 tag-passengers-add-mail col-6" id="boxInputAdd1" style="display: none;">
+                                                                <!-- Esconder en mobile -->
+                                                                <input type="email" class="form-control tag-input" placeholder="uriel.smu@me.com">
+                                                                <label for="floatingInput1">Correo electrónico*</label>
+                                                            </div>
+                                                            <div class="col-6" id="boxButtonAdd1" style="display: none;">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary mb-3 tag-btn tag-btn-blue-light tag-airlines-btn-bg-empty tag-checkin-btn-form col-sm-12 col-12"
+                                                                    data-bs-dismiss="modal">Enviar</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="tag-box-info-fly-airline-checkbox">
+                                            <div class="form-check form-switch tag-check-medium">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd2"
+                                                    onchange="javascript:showContent()">
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-flex-sd-wrap tag-passengers-add-info">
+                                                            <p class="w-100 tag-passengers-add-info-name" >Uriel Soriano Moreno</p>
+                                                            <a class="w-100 tag-passengers-add-info-mail tag-txt-blue-light" href="">uriel.smu@me.com</a>
+                                                            <p class="w-100 tag-passengers-add-info-type tag-txt-blue-light" >Adulto</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex align-items-end">
+                                                            <div class="tag-passengers-add-dates">
+                                                                <a class="w-100 tag-txt-blue-light" href="">Cambiar</a>
+                                                                <br>
+                                                                <a class="w-100 tag-txt-blue-light" href="">Correo electrónico</a>
+                                                            </div>
+                                                            <div class="form-floating mb-3 tag-passengers-add-mail col-6">
+                                                                <!-- Esconder en mobile -->
+                                                                <input type="email" class="form-control tag-input" id="floatingInput2"
+                                                                    placeholder="uriel.smu@me.com">
+                                                                <label for="floatingInput2">Correo electrónico*</label>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary mb-3 tag-btn tag-btn-blue-light tag-airlines-btn-bg-empty tag-checkin-btn-form col-sm-12 col-12"
+                                                                    data-bs-dismiss="modal">Enviar</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="tag-box-info-fly-airline-checkbox">
+                                            <div class="form-check form-switch tag-check-medium">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd3"
+                                                    onchange="javascript:showContent()">
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-flex-sd-wrap tag-passengers-add-info">
+                                                            <p class="w-100 tag-passengers-add-info-name" >Deisly Herrera Camacho</p>
+                                                            <a class="w-100 tag-passengers-add-info-mail tag-txt-blue-light" href="">uriel.smu@me.com</a>
+                                                            <p class="w-100 tag-passengers-add-info-type tag-txt-blue-light" >Menor</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-passengers-add-dates">
+                                                            <a class="w-100 tag-txt-blue-light" href="">Cambiar</a>
+                                                            <br>
+                                                            <a class="w-100 tag-txt-blue-light" href="">Correo electrónico</a>
+                                                        </div>
+                                                        <div class="form-floating mb-3 tag-passengers-add-resend">
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalRensend"
+                                                                class="btn btn-primary mb-3 tag-btn tag-btn-blue-light tag-airlines-btn-bg-empty col-sm-12 col-12">Reenviar pase de abordar</button>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="tag-line-division">
+
+        <!-- Contenedor para Vuelos de regreso-->
+
+        <div class="tagFlyReturn">
+            <div class="col-md-6 col-sm-12 tag-margin-0-auto">
+                <h3 class="w-100 tag-info-fly-subtitle">Vuelo de regreso</h3>
+            </div>
+            <div id="tagTerminalReturn" class="col-12 tag-flex-sm-wrap form-group" disabled="disabled">
+                <div class="col-md-3 col-sm-12 tag-info-fly-date">
+                    <span class="tag-info-fly-day tag-txt-blue-light">Sábado, 26 de feb 2022</span>
+                </div>
+                <div class="col-md-9 col-sm-12 d-flex tag-box-info-fly tag-box-info-fly-return">
+                    <div class="col-9 col-lg-10">
+                        <div class="col-12 tag-box-info-fly-wrap">
+                            <div class="tag-flex-sm-wrap tag-border-botom col-12">
+                                <div class="col-md-4 col-sm-12 tag-box-info-fly-terminal">
+                                    <span id="tagOutputTerminalReturn" class="w-100 tag-txt-blue-dark">Guatemala - <span class="tag-txt-blue-light">GUA</span></span>
+                                    <p id="tagDeapureTimeReurn" class="w-100 tag-txt-blue-light">Sábado, 26 de mar 2022</p>
+                                    <span id="tagDepartureTimeReturn" class="w-100">22:20 h</span>
+                                </div>
+                                <div class="col-md-4 col-sm-12 tag-box-info-fly-time">
+                                    <div class="tag-flex-md-wrap">
+                                        <p class="tag-flex-md-wrap tag-tag-gray-fly">
+                                            <span class="w-100">Tiempo de vuelo </span>
+                                            <span class="w-100">
+                                                <img class="" src="../../public/images/icons/ico_flight_time.svg" alt="ico_flight_time" srcset="">
+                                            </span>
+                                            <span id="tagFlyTimeReturn" class="w-100">+ 1 día</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 tag-box-info-fly-arrival">
+                                    <span id="tagArrivalTerminalReturn" class="w-100 tag-txt-blue-dark">Cancún - <span class="tag-txt-blue-light">CUN</span></span>
+                                    <p id="tagDayArrivalReturn" class="w-100 tag-txt-blue-light">Sábado 26 de feb 2022</p>
+                                    <span id="tagHourArrivalReturn" class="w-100">23:00 h</span>
+                                </div>
+                            </div>
+                            <div class="tag-flex-sm-wrap col-12">
+                                <div class="col-12 d-flex">
+                                    <div class="col-10 tag-box-info-fly-airline">
+                                        <p>Vuelo: <span class="tag-txt-blue-light">5U120</span></p>
+                                        <p>Avión: <span class="tag-txt-blue-light">Saab 340B</span></p>
+                                        <p class="d-flex">Operado por: <span class="tag-txt-blue-light">Tag Airline</span><span><img src="../../public/images/icons/ico_flights_operado-tag.svg" alt="" srcset=""></span></p>
+                                    </div>
+                                    <div class="tag-box-info-fly-airline-checkbox">
+                                        <div class="form-check form-switch tag-check-big" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Recuerda que podrás realizar check-in 48hrs antes de el día de tu vuelo">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDeskReturn"
+                                                onchange="javascript:showContentReturn()" disabled>
+                                            <label class="form-check-label" for="flexSwitchCheckCheckedDeskReturn">Check-in</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 tag-box-info-fly-bags tag-bg-ultra-light ">
+                            <div class="tag-flex-sm-wrap col-12">
+                                <p class="w-100">Tarifa: <span class="tag-txt-blue-light">Light</span></p>
+                                <div class="col-6">
+                                    <p class="w-100"><span><img class="tag-img-eqipaje-mano" src="../../public/images/icons/fare/ico_fares_hand-baggage.svg" alt="bag" srcset=""></span> Equipaje de mano <span class="tag-txt-blue-light">1pz. 20 lb / 9kg</span></p>
+                                    <p class="w-100"><span><img class="tag-img-preferencial" src="../../public/images/icons/fare/ico_fares_boarding.svg" alt="passenger" srcset=""></span> Abordaje preferencial </p>
+
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100"><span><img class="tag-img-equipaje-documentado" src="../../public/images/icons/fare/ico_fares_baggagex2.svg" alt="bag" srcset=""></span> Equipaje documentado <span class="tag-txt-blue-light">2pz. de 20 lb / 9kg</span></p>
+                                    <p class="w-100"><span><img class="tag-img-asistencia" src="../../public/images/icons/fare/assists.svg" alt="assist" srcset=""></span> Asistencia </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 tag-box-info-fly-img-date">
+                        <p class="tag-box-info-fly-img-date-text">
+                            <span class="w-100 tag-box-info-fly-img-date-day">Sábado</span>
+                            <span class="w-100 tag-box-info-fly-img-date-number-day">26</span>
+                            <span class="w-100 tag-box-info-fly-img-date-month">Feb 2022</span>
+                        </p>
+                        <img src="../../public/images/tag-playa.png" alt="tag-playa" width="100%">
+                    </div>
+                </div>
+            </div>
+    
+            <div id="tagPassengersReturn" class="col-12 tag-flex-sm-wrap tag-passengers" style="display: none;">
+                <div class="col-md-3 col-sm-12 tag-info-fly-date">
+                    <span class="tag-info-fly-day tag-txt-blue-light">Pasajeros</span>
+                    <p>Selecciona los nombres de los pasajeros de los cuales deseas hacer el check in</p>
+                </div>
+                <div class="col-md-9 col-sm-12 d-flex tag-box-info-fly tag-passengers-add">
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Check-in</th>
+                                    <th scope="col">Pasajero</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="tag-box-info-fly-airline-checkbox">
+                                            <div class="form-check form-switch tag-check-medium">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd1Return"
+                                                    onchange="javascript:hidenInputReturn()">
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-flex-sd-wrap tag-passengers-add-info">
+                                                            <p class="w-100 tag-passengers-add-info-name" >Uriel Soriano Moreno</p>
+                                                            <a class="w-100 tag-passengers-add-info-mail tag-txt-blue-light" href="">uriel.smu@me.com</a>
+                                                            <p class="w-100 tag-passengers-add-info-type tag-txt-blue-light" >Adulto</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-passengers-add-dates">
+                                                            <a class="w-100 tag-txt-blue-light" href="">Cambiar</a>
+                                                            <br>
+                                                            <a class="w-100 tag-txt-blue-light" href="">Correo electrónico</a>
+                                                        </div>
+                                                        <div class="form-floating mb-3 tag-passengers-add-mail" id="boxInputAdd1Return" style="display: none;">
+                                                            <!-- Esconder en mobile -->
+                                                            <input type="email" class="form-control tag-input" id="floatingInput1Return"
+                                                                placeholder="uriel.smu@me.com">
+                                                            <label for="floatingInput1">Correo electrónico*</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="tag-box-info-fly-airline-checkbox">
+                                            <div class="form-check form-switch tag-check-medium">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd2Return"
+                                                    onchange="javascript:showContentReturn()">
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-flex-sd-wrap tag-passengers-add-info">
+                                                            <p class="w-100 tag-passengers-add-info-name" >Uriel Soriano Moreno</p>
+                                                            <a class="w-100 tag-passengers-add-info-mail tag-txt-blue-light" href="">uriel.smu@me.com</a>
+                                                            <p class="w-100 tag-passengers-add-info-type tag-txt-blue-light" >Adulto</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-passengers-add-dates">
+                                                            <a class="w-100 tag-txt-blue-light" href="">Cambiar</a>
+                                                            <br>
+                                                            <a class="w-100 tag-txt-blue-light" href="">Correo electrónico</a>
+                                                        </div>
+                                                        <div class="form-floating mb-3 tag-passengers-add-mail">
+                                                            <!-- Esconder en mobile -->
+                                                            <input type="email" class="form-control tag-input" id="floatingInput2Return"
+                                                                placeholder="uriel.smu@me.com">
+                                                            <label for="floatingInput2">Correo electrónico*</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="tag-box-info-fly-airline-checkbox">
+                                            <div class="form-check form-switch tag-check-medium">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd3Return"
+                                                    onchange="javascript:showContentReturn()">
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-flex-sd-wrap tag-passengers-add-info">
+                                                            <p class="w-100 tag-passengers-add-info-name" >Deisly Herrera Camacho</p>
+                                                            <a class="w-100 tag-passengers-add-info-mail tag-txt-blue-light" href="">uriel.smu@me.com</a>
+                                                            <p class="w-100 tag-passengers-add-info-type tag-txt-blue-light" >Menor</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tag-passengers-add-dates">
+                                                            <a class="w-100 tag-txt-blue-light" href="">Cambiar</a>
+                                                            <br>
+                                                            <a class="w-100 tag-txt-blue-light" href="">Correo electrónico</a>
+                                                        </div>
+                                                        <div class="form-floating mb-3 tag-passengers-add-resend">
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalRensend"
+                                                                class="btn btn-primary mb-3 tag-btn tag-btn-blue-light tag-airlines-btn-bg-empty col-sm-12 col-12">Reenviar pase de abordar</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 tag-btns-container">
+                <div class="tag-btns-container-next">
+                    <a href="../../public/index.html" class="btn btn-primary mb-3 tag-btn tag-btn-blue-light tag-airlines-btn-bg-empty col-sm-12 col-12"
+                        data-bs-dismiss="modal">SALIR</a>
+                        
+                    <a type="submit" href="../pages/asientos.html" class="btn btn-primary mb-3 tag-btn tag-btn-blue-light col-sm-12 col-12">CONTINUAR</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Modal Tercero -->
+        <div class="modal fade tag-modal-chek-in" id="modalRensend" tabindex="-1"
+            aria-labelledby="modalRensendLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-services" src="../../public/images/icons/ico_modal-send-mail.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-blue-light" id="modalRensendLabel">Reenviar pase de abordar</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn-close tag-modal-icon-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body tag-flex-wrap justify-content-center text-center">
+                        <p class="w-100">Selecciona los pasajeros a los que deseas reenviar el pase de abordar</p>
+                        <div class="tag-modal-new-passenger">
+                            <div class="form-check form-switch tag-check-medium">
+                                <input class="form-check-input" type="checkbox" role="switch" id="checkAdd1Modal" placeholder="uriel.smu@me.com"
+                                    onchange="" checked>
+                                <label class="form-check-label" for="checkAdd1Modal">Deisly Herrera Camacho</label>
+                            </div>
+                        </div>
+                        <p class="w-100">¿A qué correo deseas recibir tu pase de abordar?</p>
+                        <div class="form-floating mb-3 tag-passengers-add-mail">
+                            <!-- Esconder en mobile -->
+                            <input type="email" class="form-control tag-input" id="floatingInput1Modal"
+                                placeholder="uriel.smu@me.com">
+                            <label for="floatingInput1Modal">Correo electrónico*</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                            
+                        <button type="submit" class="btn btn-primary mb-3 tag-btn tag-btn-blue-light "
+                            data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../../public/js/bootstrap.min.js"></script> -->
+    <!-- <script src="../../public/js/bootstrap.js"></script> -->
+    <script src="../../public/js/tag-core.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>

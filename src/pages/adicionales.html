@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAG Airlines</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">     -->
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/ux_styles.css">
+
+</head>
+
+<body>
+    <div class="tag-bg-bd ">
+        <header class=" container tag-header-basic">
+            <div class="col-4">
+                <img src="../../public/images/tag-airlines.png" alt="tag-airlines" srcset="" width="100%">
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="tag-flex-sm-wrap col-12">
+            <div class="col-md-5 col-lg-5 col-sm-12">
+                <div class="tag-salesWrp-global">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb tag-sales">
+                                <li itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url">
+                                        <span itemprop="title">Tu vuelo &gt; </span>
+                                    </a>
+                                </li>
+                                <li itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url">
+                                        <span itemprop="title"> Tu reservación &gt; </span>
+                                    </a>
+                                </li>
+                                <li class="active" itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url" class="tag-sales-active">
+                                        <span itemprop="title"> Check-in</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tag-aditionals">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="w-100">Adiconales</h1>
+                <p class="w-100">Uno de tus destinos está listo para poder realizar check-in</p>
+            </div>
+    
+            <div class="col-12 text-center">
+                <h2 class="w-100 tag-aditionals-h2">TAG Assist</h2>
+            </div>
+    
+            <div class="col-md-8 col-sm-12 d-flex tag-aditionals-dir-reverse">
+                <div class="col-md-4 col-sm-12">
+                    <div class="col-12 text-center">
+                        <div class="col-12">
+                            <img class="tag-aditionals-icon" src="../../public/images/icons/ico_extras_asistencia.svg" alt="">
+                        </div>
+                        <div class="col-12">
+                            <p class="tag-txt-blue-light tag-aditionals-txt-check">Asistencia de viaje</p>
+                        </div>
+                    </div>
+                    <div class="col-12 tag-flex-center">
+                        <div class="form-check form-switch tag-check-medium">
+                            <input class="form-check-input" type="checkbox" role="switch" id="checkAddAsist"
+                                onchange="javascript:showContent()">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-12 tag-aditionals-info-content">
+                    <p>Sabías que tener un incidente mientras te encuentras en el extranjero es más frecuente de lo que imaginas, además puede resultar muy costoso; por esta razón debes proteger tu próxima aventura con un seguro de viaje te ofrecemos <b class="tag-txt-bold">TAG Assit</b> by Addiuva <a class="tag-txt-blue-light" href="">ver beneficios.</a></p>
+                    <p>El costo de TAG Assit es de <b class="tag-txt-bold">$10 USD</b> por pasajero</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="tag-line-division">
+
+        <div class="col-lg-12 tag-btns-container">
+            <div class="tag-btns-container-next">
+                <a href="../pages/asientos.html" class="btn btn-primary mb-3 tag-btn tag-btn-blue-light tag-airlines-btn-bg-empty col-sm-12 col-12"
+                    data-bs-dismiss="modal">REGRESAR</a>
+                    
+                <a type="button"  data-bs-toggle="modal" data-bs-target="#modalCuidado" class="btn btn-primary mb-3 tag-btn tag-btn-blue-light col-sm-12 col-12">CONTINUAR</a>
+            </div>
+        </div>
+
+        <!-- Modal Modal Tercero -->
+        <div class="modal fade tag-modals tag-modal-chek-in" id="modalCuidado" tabindex="-1"
+            aria-labelledby="modalCuidadoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-services tag-modal-ico" src="../../public/images/icons/ico_modal-error.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-blue-light" id="modalCuidadosLabel">Cuidado</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center text-center tag-flex-wrap">
+                        <p class="col-12">¿Has revisado que no llevas ninguno de los siguientes artículos en tu equipaje de mano?</p>
+                        <div class="col-12">
+                            <img src="../../public/images/ico_objectd_not-allowes.svg" alt="">
+                        </div>
+                        <p class="col-12">Al continuar, estas aceptando que no llevas ninguno de los artículos mostrados</p>
+                    </div>
+                        <div class="modal-footer d-flex tag-btns-container">
+                            <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <a type="button" class="btn btn-secondary tag-btn-modal-continuar"
+                                type="submit" href="../pages/pago.html">Continuar</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../../public/js/bootstrap.min.js"></script> -->
+    <script src="../../public/js/bootstrap.js"></script>
+    <script src="../../public/js/tag-core.js"></script>
+</body>
+
+</html>

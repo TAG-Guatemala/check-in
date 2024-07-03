@@ -1,0 +1,1848 @@
+@charset "UTF-8";
+
+
+/* FONTS */
+@import url('../fonts/stylesheet.css');
+
+:root {
+    --tag-black-txt: #152049;
+    --tag-bg-blue-dark: #152049;
+    --tag-bg-blue-ultra-light: #F2FAFE;
+    --tag-bg-green-lime: #5DB85C;
+    --tag-blue-light: #00A1ED;
+    --tag-white: #FFFFFF;
+    --tag-gray-fly: #8E969B;
+    --tag-gray-light: #A9B6C6;
+    --tag-gray-inactive: #90A4AF;
+    --tag-gray-ultra-light: #7F7F7F;
+    --tag-red-error: #C90019;
+}
+
+*, body {
+    font-family: 'Avenir';
+    color: var(--tag-black-txt);
+}
+
+p {
+    font: normal normal 300 14px/24px Avenir;
+    color: var(--tag-black-txt);
+}
+
+h1 {
+    font: normal normal 300 30px/50px Avenir;
+}
+
+b {
+    font: normal normal 900 14px/19px Avenir;
+    letter-spacing: 0px;
+}
+
+/****** Clases: Todas las clases deben de iniciar con la palabra .tag unidas por guión con una palabra clave referente a su función ******/
+
+.tag-hidden-mobile {
+    display: none !important;
+}
+
+.tag-hidden-desk {
+    display: flex !important;
+}
+
+.tag-txt-bold {
+    font: normal normal 900 14px/19px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-bg-bd {
+    background-color: var(--tag-bg-blue-dark);
+}
+
+.tag-bg-ultra-light {
+    background-color: var(--tag-bg-blue-ultra-light);
+}
+
+.tag-bg-blue-light {
+    background-color: var(--tag-blue-light);
+}
+
+.tag-bg-gray-fly {
+    background-color: var(--tag-gray-fly);
+}
+
+.tag-bg-gray-light {
+    background-color: var(--tag-gray-light);
+}
+
+.tag-bg-gray-inactive {
+    background-color: var(--tag-gray-inactive);
+}
+
+.tag-bg-gray-ultra-light {
+    background-color: var(--tag-gray-ultra-light);
+}
+
+.tag-txt-black {
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-txt-blue-dark {
+    color: var(--tag-bg-blue-dark) !important;
+}
+
+.tag-txt-blue-light {
+    color: var(--tag-blue-light) !important;
+}
+
+.tag-txt-white {
+    color: var(--tag-white) !important;
+}
+
+.tag-tag-gray-fly {
+    color: var(--tag-gray-fly);
+}
+
+.tag-txt-gray-light {
+    color: var(--tag-gray-light) !important;
+}
+
+.tag-txt-gray-inactive {
+    color: var(--tag-gray-inactive) !important;
+}
+
+.tag-txt-gray-ultra-light {
+    color: var(--tag-gray-ultra-light) !important;
+}
+
+.tag-txt-error {
+    color: var(--tag-red-error);
+}
+
+.tag-h-100 {
+    height: 100%;
+}
+
+.tag-margin-0-auto {
+    margin: 0 auto;
+}
+
+.tag-div-line-tp {
+    border-top: 1px solid var(--tag-gray-light);
+}
+
+.tag-div-line-bt {
+    border-bottom: 1px solid var(--tag-gray-light);
+}
+
+.tag-div-line-rg {
+    border-right: 1px solid var(--tag-gray-light);
+}
+
+.tag-div-line-lf {
+    border-left: 1px solid var(--tag-gray-light);
+}
+
+.tag-border-wht {
+    border: 1px solid var(--tag-white) !important;
+}
+
+.tag-redesign-container {
+    max-height: 400px;
+    margin-top: 100px !important;
+}
+
+.tag-btn {
+    border-radius: 0px;
+    padding: 10px 15px;
+}
+
+.tag-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-sm-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-md-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-lg-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-xl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-xxl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-margin-0 {
+    margin: 0%;
+}
+
+.tag-margin-0-lf {
+    margin-left: 0%;
+}
+
+.tag-margin-0-rht {
+    margin-right: 0%;
+}
+
+.tag-margin-0-top {
+    margin-top: 0%;
+}
+
+.tag-margin-0-btm {
+    margin-bottom: 0%;
+}
+
+.tag-only-desk {
+    display: none;
+}
+
+.tag-only-mobile {
+    display: block;
+}
+
+.tag-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.tag-modal-icon-close {
+    position: relative;
+    left: 115px;
+    top: -18px;
+}
+
+.tag-border-botom {
+    padding: 5px 15px;
+    border-bottom: 0.5px solid var(--tag-gray-light);
+}
+
+.tag-line-division {
+    margin: 20px auto;
+}
+
+.tag-btns-container {
+    margin: 50px 0;
+}
+
+/* Header */
+
+.tag-header-basic {
+    top: 0px;
+    left: 0px;
+    max-width: 1336px;
+    height: 50px;
+    background: var(--tag-bg-blue-dark) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.tag-header-basic img {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Inputs form */
+
+.tag-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    height: 50px;
+}
+
+.tag-input.question {
+    background: url(../images/icons/ToolTip.svg) no-repeat right center;
+    background-size: auto 30%;
+    background-position-y: 25px;
+    background-position-x: 95%;
+}
+
+.tag-input.form-floating>label {
+    font: normal normal 300 18px/20px Avenir;
+}
+
+.tag-input.form-floating>.form-control:focus,
+.tag-input.form-floating>.form-control:not(:placeholder-shown),
+.tag-input.form-floating>.form-control-plaintext:focus,
+.tag-input.form-floating>.form-control-plaintext:not(:placeholder-shown) {
+    font: normal normal 300 10px/20px Avenir;
+}
+
+
+/* Buttons */
+.tag-btn {
+    border-radius: 0;
+    border: none;
+    height: 50px;
+    opacity: 1;
+    text-align: center;
+    font-family: "Avenir";
+    letter-spacing: 0px;
+    color: var(--tag-white);
+    text-transform: uppercase;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-btn-blue-light {
+    background-color: var(--tag-blue-light);
+}
+
+.tag-airlines-btn-bg-empty {
+    /* width: 189px; */
+    height: 34px;
+    border: 1px solid #33B5E5;
+    background-color: var(--tag-white);
+    text-transform: inherit;
+    color: #33B5E5;
+    text-align: center;
+    font: normal normal 300 14px/50px Avenir;
+    display: flex;
+}
+
+/* Checks Switch*/
+
+.tag-check-big,
+.tag-check-medium,
+.tag-check-small {
+    display: flex;
+    align-items: center;
+}
+
+
+.tag-check-big.form-switch .form-check-input {
+    width: 80px;
+    height: 35px;
+    background-image: url(../images/icons/ico_check_inactive.svg);
+    /* background-image: url(../images/icons/big-switch/circle-on.svg); */
+}
+
+.tag-check-big.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image: url(../images/icons/big-switch/circle-on.svg);
+    background-position: right -11% bottom 73%;
+    background-size: 42px;
+    transition: background-position 0.15s ease-in-out;
+}
+
+
+.tag-check-medium.form-switch .form-check-input {
+    width: 44px;
+    height: 24px;
+    background-image: url(../images/icons/ico_check_inactive.svg);
+}
+
+.tag-check-small.form-switch .form-check-input {}
+
+.tag-check-big .form-check-input,
+.tag-check-medium .form-check-input,
+.tag-check-small .form-check-input {
+    background-color: var(--tag-gray-inactive);
+    border-color: var(--tag-gray-inactive);
+}
+
+.tag-check-big .form-check-input:checked,
+.tag-check-medium .form-check-input:checked,
+.tag-check-small .form-check-input:checked {
+    background-color: var(--tag-bg-green-lime);
+    border-color: var(--tag-bg-green-lime);
+}
+
+.tag-check-big .form-check-label,
+.tag-check-medium .form-check-label,
+.tag-check-small .form-check-label {
+    font: normal normal 900 16px/22px Avenir;
+    margin-left: 15px;
+}
+
+.tag-check-medium {}
+
+.tag-check-small {}
+
+/* Styles Modal  */
+
+.modal-icon-colse {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+
+/****** Clases especiales son muy específicas, casos de uso: 
+    - Solo se usan una vez.
+    - Son especificas para un ajuste en específico
+    - Pueden usar o no la palabra tag para iniciar la clase
+******/
+
+
+.tag-redesign-logo {
+    margin-bottom: 125px;
+}
+
+.tag-redesign-logo img {
+    width: 100%;
+    max-width: 60%;
+    margin-top: 20px;
+}
+
+.tag-redesign-actions {
+    padding-left: 35px;
+}
+
+.tag-redesign-actions h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.tag-redesign-actions span,
+.tag-redesign-actions a {
+    font-weight: 100;
+}
+
+.tag-redesign-actions span {
+    margin: 40px 0;
+}
+
+.tag-redesign-actions a {
+    margin: 20px 0 10px 0;
+    padding: 10px 15px;
+}
+
+.tag-redesign-actions a:nth-child(1) {
+    margin-top: 40px;
+}
+
+.tag-login {
+    padding-left: 0px;
+}
+
+.tag-login-imgSales {
+    position: absolute;
+    width: 101%;
+    right: 0px;
+}
+
+.tag-salesWrp-global {
+    width: 100%;
+}
+
+.tag-salesWrp {
+    width: 100%;
+    margin-top: 170px;
+}
+
+.tag-login-mobile {
+    height: 170px;
+    width: 581px;
+    object-fit: cover;
+}
+
+.tag-sales a {
+    font: normal normal 300 11px/20px Avenir;
+    color: var(--tag-gray-inactive);
+}
+
+.tag-sales a.tag-sales-active {
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-login .tag-login-container {
+    margin: 20px;
+}
+
+.tag-login .tag-login-container h1,
+.tag-login .tag-login-container h3 {
+    text-align: center;
+}
+
+.tag-login .tag-login-container h1 {
+    font: normal normal 300 30px/50px Avenir;
+    margin: 20px 0;
+
+}
+
+.tag-login .tag-login-container h3 {
+    font: normal normal 300 20px/27px Avenir;
+    margin: 20px 0;
+}
+
+.tag-login .tag-login-container form {
+    margin: 20px 0;
+}
+
+.tag-login .tag-login-container form .tag-login-cont-inputs {
+    width: 100%;
+}
+
+.tag-login .tag-login-container form input {
+    margin-bottom: 15px;
+}
+
+.tag-login .tag-login-container form a {
+    margin: 20px 0;
+}
+
+.tag-login .tag-login-container-txt p {
+    font: normal normal 300 14px/24px Avenir;
+}
+
+.tag-modal-chek-in .modal-dialog,
+.tag-modal-error .modal-dialog,
+.tag-modals .modal-dialog {
+    margin-top: 30px;
+}
+
+
+.tag-modals .modal-content {
+    border-top: 3px solid var(--tag-blue-light);
+    border-radius: 0;
+}
+
+.tag-modal-error .modal-content {
+    border-top: 3px solid var(--tag-red-error);
+    width: 100%;
+    border-radius: initial;
+}
+
+/* .tag-modal-chek-in img {
+    width: 100%;
+    max-width: 62px;
+    height: 52px;
+    margin-right: 10px;
+}
+
+.tag-modal-chek-in img.tag-modal-services {
+    width: 100%;
+    max-width: 126px;
+    height: 33px;
+    margin-right: 10px;
+} */
+
+.tag-modals .tag-modal-ico {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.tag-modals .tag-modal-ico.tag-modal-ico-menores {
+    width: 100%;
+    max-width: 62px;
+    height: 52px;
+}
+
+.tag-modals .tag-modal-ico.tag-modal-services {
+    width: 100%;
+    max-width: 126px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+
+.tag-modals h1 {
+    font: normal normal normal 16px/22px Avenir;
+}
+
+.tag-modal-chek-in .modal-header,
+.tag-modal-error .modal-header {
+    border: none;
+}
+
+.tag-modal-chek-in .tag-btn-modal-cerrar {
+    background: none;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    border: 1px solid var(--tag-blue-light);
+    opacity: 1;
+    color: var(--tag-blue-light);
+    border-radius: initial;
+}
+
+.tag-modal-error .tag-btn-modal-cerrar {
+    background: none;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    border: 1px solid var(--tag-gray-ultra-light);
+    opacity: 1;
+    color: var(--tag-gray-ultra-light);
+    border-radius: initial;
+}
+
+.tag-modal-chek-in .modal-footer,
+.tag-modal-error .modal-footer {
+    border: none;
+}
+
+
+
+.tag-info-fly-date {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.tag-info-fly-date .tag-info-fly-day {
+    text-align: center;
+    font: normal normal normal 18px/25px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-box-info-fly {
+    box-shadow: 0px 2px 3px #00000031;
+    border: 0.5px solid var(--tag-gray-light);
+    opacity: 1;
+}
+
+.tag-info-fly .tag-info-fly-subtitle {
+    text-align: center;
+    font: normal normal medium 24px/33px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap {
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal,
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival {
+    font: normal normal 300 20px/27px Avenir;
+    letter-spacing: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal {
+    margin-bottom: 30px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival {
+    margin-bottom: 15px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal span,
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival span {
+    width: 100%;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal p,
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival p {
+    display: none;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-time {
+    display: none;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline,
+.tag-info-fly .tag-box-info-fly-bags {
+    display: none;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-eqipaje-mano  {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 12px;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-preferencial {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 12px;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-equipaje-documentado {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 20px;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-asistencia {
+    margin-right: 5px;
+    margin-left: 8px;
+    width: 100%;
+    max-width: 12px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+    width: 100%;
+    /* position: relative;
+    top: 83%; */
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox .tag-check-big {
+    margin: 15px 0;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text {
+    position: relative;
+    top: 35%;
+    height: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 90px;
+    width: 100%;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text .tag-box-info-fly-img-date-day {
+    font: normal normal normal 16px/22px Avenir;
+    letter-spacing: 0.19px;
+    color: var(--tag-white);
+    text-shadow: 0px 3px 6px #0000007B;
+    opacity: 1;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text .tag-box-info-fly-img-date-number-day {
+    text-align: center;
+    font: normal normal medium 34px/46px Avenir;
+    letter-spacing: 0.41px;
+    color: var(--tag-white);
+    text-shadow: 0px 3px 6px #0000007B;
+    opacity: 1;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text .tag-box-info-fly-img-date-month {
+    text-align: center;
+    font: normal normal normal 16px/22px Avenir;
+    letter-spacing: 0.19px;
+    color: var(--tag-white);
+    text-shadow: 0px 3px 6px #0000007B;
+    opacity: 1;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date img {
+    min-height: 200px;
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    top: -17px;
+    z-index: -1;
+}
+
+.tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-name {
+    font: normal normal 300 16px/22px Avenir;
+    margin-bottom: 0;
+}
+
+.tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-mail {
+    width: 100%;
+    font: normal normal 300 12px/16px Avenir;
+}
+
+.tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-type {
+    display: none;
+}
+
+.tag-passengers-add .tag-passengers-add-dates {
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal 300 12px/16px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-passengers-add .tag-passengers-add-mail {
+    display: none;
+}
+
+.tag-passengers {
+    margin: 30px 0 50px 0;
+}
+
+.tag-passengers .tag-box-info-fly {
+    height: 100%;
+}
+
+.tag-passengers .tag-passengers-add .tag-passengers-add-resend {
+    display: none;
+}
+
+.tag-passengers .tag-checkin-btn-form {
+    display: none;
+}
+
+#modalRensend.tag-modal-chek-in .modal-content, .tag-modal-error .modal-content {
+    height: initial;
+}
+
+#modalRensend.tag-modal-chek-in .modal-content p {
+    font: normal normal normal 16px/22px Avenir;
+}
+
+#modalRensend.tag-modal-chek-in .modal-content .tag-modal-new-passenger {
+    margin: 20px 0;
+    width: 433px;
+    height: 62px;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalRensend .tag-btn,
+#modalRensend .tag-btn-modal-cerrar {
+    width: 160px;
+    height: 40px;
+}
+
+.tag-btns-container .tag-btns-container-next {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.tag-btns-container .tag-btns-container-next a,
+.tag-btns-container .tag-btns-container-next button {
+    width: 100%;
+    height: 50px;
+}
+
+.tag-btns-container .tag-airlines-btn-bg-empty {
+    height: 50px;
+}
+
+.tag-table-seating-scroll-x {
+    display: flex;
+    width: 100%;
+    min-height: 56px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 40px;
+}
+
+.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container  {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    max-width: 300px;
+    margin-left: 50px;
+    padding: 0 15px;
+    background-color: #F7F8F9;
+}
+
+.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container .tag-table-seating-title {
+    font: normal normal 300 10px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container .tag-table-seating-body {
+    font: normal normal medium 16px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-aditionals .tag-aditionals-h2 {
+    font: normal normal medium 24px/33px Avenir;
+    margin-bottom: 30px;
+}
+
+.tag-aditionals .tag-aditionals-dir-reverse {
+    flex-direction: column-reverse;
+}
+
+.tag-aditionals .tag-aditionals-dir-reverse .tag-aditionals-icon {
+    width: 46px;
+    height: 37px;
+}
+
+.tag-aditionals .tag-aditionals-dir-reverse .tag-aditionals-txt-check {
+    font: normal normal normal 18px/25px Avenir;
+    letter-spacing: 0px;
+    margin: 15px auto;
+}
+
+.tag-aditionals .tag-aditionals-info-content {
+    margin-top: 0px;
+}
+
+#modalCuidado .modal-dialog {
+    width: 100%;
+}
+
+#modalCuidado .modal-content .modal-header .modal-title {
+    margin-left: 15px;
+}
+
+#modalCuidado .modal-content .modal-header .tag-modal-icon-close {
+    position: relative;
+    left: 370px;
+    top: -18px;
+}
+
+#modalCuidado .modal-content .modal-body p {
+    margin-bottom: 0px;
+    font: normal normal normal 16px/22px Avenir;
+    letter-spacing: 0px;
+}
+
+#modalCuidado .modal-content .modal-body img {
+    width: 100%;
+    margin: 30px auto
+}
+
+#modalCuidado .modal-content .tag-btns-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#modalCuidado .modal-content .tag-btns-container button {
+    width: 100%;
+    max-width: 100%;
+}
+
+#modalCuidado .modal-content .tag-btns-container .tag-btn-modal-cerrar,
+#modalCuidado .modal-content .tag-btns-container  .tag-btn-modal-continuar {
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    opacity: 1;
+    border-radius: initial;
+}
+
+#modalCuidado .modal-content .tag-btns-container .tag-btn-modal-cerrar {
+    background: none;
+    border: 1px solid var(--tag-gray-ultra-light);
+    color: var(--tag-gray-ultra-light);
+}
+
+#modalCuidado .modal-content .tag-btns-container  .tag-btn-modal-continuar {
+    background: var(--tag-blue-light);
+    border: 1px solid var(--tag-blue-light);
+    color: var(--tag-bg-blue-ultra-light);
+}
+
+.tag-card.tag-table-seating-scroll-x {
+    height: auto
+}
+
+.tag-card.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+    padding: 0;
+    margin-left: 3%;
+}
+
+.tag-card .tag-cards {
+    width: 100%;
+    max-width: 220px;
+    min-height: 237px;
+    margin: 3%;
+    box-shadow: 0px 3px 6px #0000004E;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+
+.tag-card .tag-cards .card {
+    border: none;
+}
+
+.tag-card .tag-cards .tag-card-img {
+    width: 100%;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    min-height: 151px;
+}
+
+.tag-card .tag-cards .tag-card-img .tag-bag-card {
+    width: 50px;
+}
+
+/* ***** */
+
+.tag-checkin-success-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.tag-checkin-success-ticket {
+    height: auto;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-wrap {
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-wrap > div {
+    justify-content: center;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-terminal span,
+.tag-checkin-success-ticket .tag-box-info-fly-arrival span {
+    font: normal normal 300 20px/27px Avenir;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-terminal p,
+.tag-checkin-success-ticket .tag-box-info-fly-arrival p {
+    font: normal normal 300 14px/19px Avenir;
+    margin: 5px 0 3px 0;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-time {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: var(--tag-gray-fly);
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-time p {
+    margin-bottom: 0;
+    color: var(--tag-gray-fly);
+    text-align: center;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-time p span {
+    color: var(--tag-gray-fly);
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-airline {
+    display: block;
+    width: 100%;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-airline p {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-bags{
+    display: flex;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-bags div p:first-child {
+    font: normal normal 900 12px/16px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-bags div p {
+    margin-bottom: 0;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-img-date img {
+    min-height: 200px;
+    object-fit: cover;
+    height: 100%;
+    /* position: relative; */
+    top: -17px;
+    z-index: -1;
+}
+
+/******** Styles for LP Guatemala ********/
+
+.tag-lp-salesWrp {
+    position: absolute;
+}
+
+.tag-lp-image-full {
+    width: 100%;
+    background-image: url(../../public/images/guatemala-5.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+}
+
+.tag-lp-image-full::before {
+    content: "";
+    width: 100%;
+    min-height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: transparent linear-gradient(180deg, #FFFFFF00 60%, #FFFFFF 100%) 0% 0% no-repeat padding-box;   
+    opacity: 1; 
+}
+
+.tag-lp-title {
+    text-align: left;
+    font: normal normal 900 45px/62px Avenir;
+    letter-spacing: -0.01px;
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-lp-subtitle {
+    font: normal normal 900 20px/62px Avenir;
+}
+
+.tag-lp .tag-div-line-lf {
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.tag-lp .tag-div-line-lf p img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.tag-lp .tag-div-line-lf .tag-lp-p-zona-horaria {
+    padding-left: 45px;
+}
+
+.tag-lp-h3 {
+    font: normal normal 900 36px/40px Avenir;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+}
+
+.tag-lp-section {
+    margin-top: 30px;
+}
+
+.tag-lp-que-hacer .tag-lp-info {
+    margin-bottom: 15px;
+}
+
+.tag-lp-que-hacer .tag-lp-info-image {
+    padding-left: 15px;
+    font: normal normal normal 16px/24px Avenir;
+    padding-top: 15px;
+    border-bottom: 1px solid #A9B6C6;
+}
+
+.tag-lp-comida-info {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #A9B6C6;
+}
+
+/******** Styles for LP Encuentra Destino ********/
+
+.tag-encuentra-destino {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-image: url(../../public/images/lp_encuentra_destino/Carrusel_web_promociones_Mobile_1.jpg);
+}
+
+.tag-lp-encuentra-destino-opciones {
+    margin: 30px 0;
+}
+
+.tag-lp-encuentra-destino-title {
+    font: normal normal 900 18px/20px Avenir;
+}
+
+.tag-lp-encuentra-destino-select {
+    font: normal normal 900 18px/20px Avenir;
+    color: var(--tag-blue-light);
+    border: none;
+    border-bottom: 2px solid var(--tag-bg-blue-dark);
+    border-radius: 0;
+}
+
+.tag-lp-card {
+    border-radius: 0%;
+    border: none;
+}
+
+.tag-lp-card-img {
+    border-radius: unset;
+}
+
+.tag-lp-card-reserva {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tag-lp-encuentra-destino-card-text {
+    font: normal normal 300 30px/28px Avenir !important;
+    margin-bottom: 0;
+}
+
+.tag-lp-encuentra-destino-reserva >span {
+    font: normal normal 300 12px/28px Avenir;
+    color: var(--tag-gray-ultra-light);
+    position: relative;
+    top: -13px;
+    right: 14px;
+}
+
+.tag-lp-encuentra-destino-card-text > span {
+    font: normal normal 300 14px/28px Avenir;
+}
+
+.tag-lp-center-card-mobile {
+    display: flex;
+    justify-content: center;
+}
+
+/**** Estilos para tooltip ****/
+
+.tooltip-main {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-weight: 700;
+    background: #f3f3f3;
+    border: 1px solid #737373;
+    color: #737373;
+    margin: 4px 121px 0 5px;
+    float: right;
+    text-align: left !important;
+    z-index: 100;
+  }
+  
+  .tooltip-qm {
+    float: left;
+    margin: -2px 0px 3px 4px;
+    font-size: 12px;
+    z-index: 100;
+  }
+  
+  .tooltip-inner {
+    max-width: 562px !important;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000067;
+    border: 1px solid #A9B6C6;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 15px/20px Avenir;
+    letter-spacing: 0px;
+    color: #152049;
+    opacity: 1;
+    padding: 10px 15px 10px 60px;
+    background: left 5% / 9% 100% no-repeat url("../images/icons/ico_checkin-info.png") #FFFFFF;
+    z-index: 100;
+  }
+  
+  .tooltip.show {
+    opacity: 1;
+    z-index: 100;
+  }
+
+/* Media Querys */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .tag-hidden-mobile {
+        display: flex !important;
+    }
+    
+    .tag-hidden-desk {
+        display: none !important;
+    }
+
+    .tag-display-hiden {
+        display: none;
+    }
+
+    .tag-flex-sm-wrap {
+        display: flex;
+    }
+
+    .tag-login-mobile {
+        height: 270px;
+        width: 800px;
+    }
+
+    .tag-modal-chek-in .modal-dialog,
+    .tag-modal-error .modal-dialog {
+        margin-top: 100px;
+    }
+
+    /* .tag-modal-chek-in .modal-content,
+    .tag-modal-error .modal-content {
+        width: 640px;
+        height: 245px;
+    } */
+
+    /* .tag-modal-icon-close {
+        position: relative;
+        left: 250px;
+    } */
+
+    .tag-info-fly-date {
+        text-align: center;
+    }
+
+    /* .tag-info-fly .tag-box-info-fly {
+        width: 100%;
+        max-width: 680px;
+        height: 200px;
+    } */
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal,
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival {
+        margin-bottom: 0px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal p,
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival p {
+        margin-bottom: 0;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal p,
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival p {
+        display: block;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-time {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-time p {
+        margin: auto;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline {
+        display: flex;
+        padding: 9px 0;
+        width: 100%;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline p {
+        font: normal normal 300 12px/16px Avenir;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-bags {
+        display: flex;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-bags div p {
+        margin-bottom: 0;
+    }
+
+    .tag-info-fly .tag-box-info-fly-bags div p:first-child {
+        font: normal normal 900 12px/16px Avenir;
+        letter-spacing: 0px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text {
+        display: none;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+        width: auto;
+        position: relative;
+        left: -129%;
+        top: -140%;
+        height: 1px;
+        /* position: absolute;
+        left: 10%;
+        top: 35%; */
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox .tag-check-big .form-check-label {
+        display: none;
+    }
+
+    .tag-info-fly .tag-box-info-fly-img-date img {
+        position: initial;
+    }
+
+    .tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-mail {
+        display: none;
+    }
+
+    .tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-type {
+        display: flex;
+    }
+
+    .tag-passengers-add .tag-passengers-add-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag-passengers-add .tag-passengers-add-dates {
+        display: none;
+    }
+
+    .tag-passengers-add .tag-passengers-add-mail {
+        display: block;
+    }
+
+    .tag-passengers .tag-passengers-add .tag-passengers-add-resend {
+        display: block;
+    }    
+
+
+    .tag-passengers .tag-checkin-btn-form {
+        display: flex;
+        max-width: 100px;
+        margin-left: 15px;
+    }
+
+    .tag-btns-container .tag-btns-container-next {
+        flex-wrap: nowrap;
+        flex-direction: initial;
+        justify-content: flex-end;
+    }
+
+    .tag-btns-container .tag-btns-container-next a,
+    .tag-btns-container .tag-btns-container-next button {
+        max-width: 200px;
+        margin: 0 15px;
+    }
+
+    .tag-btns-container .tag-airlines-btn-bg-empty {
+        height: 50px;
+        margin-right: 30px;
+    }
+
+    .tag-table-seating-scroll-x {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 20px 30px;
+        max-width: 460px;
+        border: 1px solid var(--tag-gray-light);
+    }
+
+    .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: inherit;
+        margin-left: 0px;
+        margin: 10px 0;
+    }
+
+    .tag-aditionals .tag-aditionals-dir-reverse {
+        flex-direction: initial;
+    }
+
+    .tag-aditionals .tag-aditionals-info-content {
+        margin-top: 40px;
+    }
+
+    #modalCuidado .modal-content .tag-btns-container {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    #modalCuidado .modal-content .tag-btns-container button {
+        width: 100%;
+        max-width: 160px;
+        height: 40px;
+    }
+
+    .tag-card.tag-table-seating-scroll-x {
+        height: auto;
+        border: none;
+        max-width: none;
+        padding: 0;
+    }
+
+    .tag-card.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        max-width: 220px;
+        margin-left: 0;
+        margin-right: 3%;
+    }
+
+    /******/    
+
+    .tag-checkin-success-ticket {
+        height: 330px;
+    }
+
+    .tag-checkin-success-info > div:first-child {
+        padding-right: 50px;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-wrap {
+        padding: 15px;
+        padding-bottom: 0%;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-terminal span,
+    .tag-checkin-success-ticket .tag-box-info-fly-arrival span {
+        font: normal normal 300 20px/27px Avenir;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-terminal p,
+    .tag-checkin-success-ticket .tag-box-info-fly-arrival p {
+        font: normal normal 300 14px/19px Avenir;
+        margin: 5px 0 3px 0;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--tag-gray-fly);
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-time p {
+        margin-bottom: 0;
+        color: var(--tag-gray-fly);
+        text-align: center;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-time p span {
+        color: var(--tag-gray-fly);
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-airline p {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-bags{
+        display: flex;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-bags div p:first-child {
+        font: normal normal 900 12px/16px Avenir;
+        letter-spacing: 0px;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-bags div p {
+        margin-bottom: 0;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-img-date img {
+        min-height: 200px;
+        object-fit: cover;
+        height: 100%;
+        /* position: relative; */
+        top: -17px;
+        z-index: -1;
+    }
+
+    /******** Styles for LP Guatemala ********/
+
+    .tag-lp-image-full {
+        width: 100%;
+        background-image: url(../../public/images/guatemala-5.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+
+    .tag-lp-image-full::before {
+        content: "";
+        width: 100%;
+        min-height: 600px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: transparent linear-gradient(180deg, #FFFFFF00 60%, #FFFFFF 100%) 0% 0% no-repeat padding-box;   
+        opacity: 1; 
+    }
+
+    .tag-lp-title {
+        font: normal normal 900 115px/62px Avenir;
+        margin-top: 25px;
+    }
+
+    .tag-lp-salesWrp {
+        position: absolute;
+    }
+
+    .tag-lp-salesWrp .tag-sales a {
+        color: var(--tag-white);
+        text-decoration: none;
+    }
+    .tag-lp-salesWrp .tag-sales span {
+        color: var(--tag-white);
+        font: normal normal normal 16px/62px Avenir;
+        letter-spacing: 0px;
+    }
+
+    .tag-lp-h3 {
+        font: normal normal 900 36px/20px Avenir;
+    }
+
+    /******** Styles for LP Encuentra Destino ********/
+
+    .tag-encuentra-destino {
+        background-image: url(../../public/images/lp_encuentra_destino/Carrusel_web_promociones_Desk_1.jpg);
+        min-height: 350px;
+        background-position-y: 0px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .tag-flex-md-wrap {
+        display: flex;
+    }
+
+    .tag-input {
+        max-width: 250px;
+    }
+
+    .tag-btn {
+        max-width: 300px;
+    }
+
+    .tag-only-desk {
+        display: block;
+    }
+
+    .tag-only-mobile {
+        display: none;
+    }
+
+    .tag-salesWrp {
+        margin-top: 0px;
+    }
+
+    .tag-login {
+        padding-left: 30px;
+    }
+
+    .tag-login-imgSales {
+        position: initial;
+        width: 100%;
+        right: initial;
+    }
+
+    .tag-login-mobile {
+        height: 116%;
+        width: 100%;
+        position: relative;
+        top: -72px;
+    }
+
+    .tag-wrap-reverse {
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+    .tag-login .tag-login-container h1 {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .tag-login .tag-login-container form .tag-login-cont-inputs {
+        max-width: 520px;
+        margin: auto;
+    }
+
+    .tag-login .tag-login-container form input {
+        max-width: 250px;
+    }
+
+    .tag-login .tag-login-container-txt p {
+        max-width: 579px;
+        margin: auto;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline p {
+        font: normal normal 300 12px/16px Avenir;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    /* .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+        width: auto;
+        position: absolute;
+        left: 10%;
+        top: 35%;
+    } */
+
+    #modalCuidado .modal-content .tag-btns-container {
+        margin-right: 120px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        display: flex;
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+    }
+
+    #modalError.tag-modals .modal-content,
+    #modalErrorDatos.tag-modals .modal-content,
+    #modalCheckIn.tag-modals .modal-content,
+    #modalMenores.tag-modals .modal-content,
+    #modalServicios.tag-modals .modal-content,
+    #modalTerceros.tag-modals .modal-content {
+        width: 640px;
+    }
+    
+    /******** Styles for LP Encuentra Destino ********/
+
+    .tag-lp-encuentra-destino-opciones {
+        display: flex;
+        align-items: center;
+    }
+
+    .tag-lp-encuentra-destino-title {
+        font: normal normal 300 28px/20px Avenir;
+        margin-bottom: 0;
+    }
+
+    .tag-lp-encuentra-destino-select {
+        max-width: 220px;
+        font: normal normal 900 28px/20px Avenir;
+        margin-left: 15px;
+    }
+
+    .tag-lp-center-card-mobile {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .tag-lp-que-hacer .tag-lp-info-image {
+        padding-top: 0;
+        border-bottom: none;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .tag-flex-lg-wrap {
+        display: flex;
+    }
+
+    .tag-salesWrp {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .tag-login-mobile {
+        height: 100%;
+        width: 100%;
+        position: initial;
+    }
+
+    .tag-info-fly .tag-box-info-fly {
+        /* width: 100%;
+        max-width: 680px; */
+        height: 200px;
+    }
+
+    .tag-info-fly .tag-box-info-fly.tag-box-info-fly-return {
+        height: 218px;
+    }
+
+    /* .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+        width: auto;
+        position: absolute;
+        left: 30%;
+        top: 35%;
+    } */
+
+    .tag-passengers .tag-box-info-fly{
+        height: 100%;
+    }
+
+    #modalCuidado .modal-dialog {
+        max-width: 926px;
+    }
+
+    #modalCuidado .modal-content .modal-header .modal-title {
+        margin-left: 15px;
+    }
+
+    #modalCuidado .modal-content .modal-header .tag-modal-icon-close {
+        position: relative;
+        left: 370px;
+        top: -18px;
+    }
+
+    #modalCuidado .modal-content .modal-body p {
+        margin-bottom: 0px;
+        font: normal normal normal 16px/22px Avenir;
+        letter-spacing: 0px;
+    }
+
+    #modalCuidado .modal-content .modal-body img {
+        max-width: 566px;
+        margin: 30px auto
+    }
+
+    #modalCuidado .modal-content .tag-btns-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #modalCuidado .modal-content .tag-btns-container button {
+        width: 160px;
+        height: 40px;
+    }
+
+    .tag-checkin-success-ticket {
+        height: 246px;
+    }
+
+    .tag-checkin-success-ticket {
+        height: 265px;
+    }
+    
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        height: 50px;
+    }
+
+    /******** Styles for LP Encuentra Destino ********/
+
+    .tag-lp-encuentra-destino-select {
+        max-width: 334px;
+        font: normal normal 900 28px/20px Avenir;
+        margin-left: 15px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .tag-flex-xl-wrap {
+        display: flex;
+    }
+
+    .tag-checkin-success-ticket {
+        height: 200px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        height: 30px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .tag-flex-xxl-wrap {
+        display: flex;
+    }
+}

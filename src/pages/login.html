@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAG Airlines</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">     -->
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/ux_styles.css">
+
+</head>
+
+<body>
+    <div class="tag-bg-bd ">
+        <header class=" container tag-header-basic">
+            <div class="col-4">
+                <img src="../../public/images/tag-airlines.png" alt="tag-airlines" srcset="" width="100%">
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="tag-flex-sm-wrap col-12">
+            <div class="col-md-5 col-lg-5 col-sm-12 tag-wrap-reverse">
+                <div class="tag-login-imgSales">
+                    <img class="img-fluid tag-login-mobile" src="../../public/images/web-checkin-asiento.png" alt="" srcset="">
+                </div>
+                <div class="tag-salesWrp">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb tag-sales">
+                                <li itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url">
+                                        <span itemprop="title">Tu vuelo &gt; </span>
+                                    </a>
+                                </li>
+                                <li itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url">
+                                        <span itemprop="title"> Tu reservación &gt; </span>
+                                    </a>
+                                </li>
+                                <li class="active" itemscope itemtype="http://www.example.com/">
+                                    <a href="http://www.example.com/" itemprop="url" class="tag-sales-active">
+                                        <span itemprop="title"> Check-in</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-12 tag-login">
+                <div class="tag-login-container">
+                    <div class="col-12">
+                        <h1><span class="tag-only-desk">WEB <br> CHECK-IN </span>
+                            <span class="tag-only-mobile">CHECK-IN <br> ONLINE</span>
+                        </h1>
+                    </div>
+                    <div class="col-12">
+                        <h3>Introduce tus datos</h3>
+                    </div>
+                    <div class="row col-12 tag-margin-0-lf">
+                        <form action="" class="">
+                            <div class="tag-flex-sm-wrap tag-login-cont-inputs col-md-10 col-lg-10 col-12">
+                                <div class="form-floating col-lg-6 col-sm-12 col-12 mb-3">
+                                    <input type="text" class="form-control tag-input question" id="floatNumRes"
+                                        placeholder="SMU226">
+                                    <label for="floatNumRes">Número de reservación</label>
+                                </div>
+                                <div class="form-floating col-lg-6 col-sm-12 col-12">
+                                    <input type="text" class="form-control tag-input " id="floatLastname"
+                                        placeholder="Soriano">
+                                    <label for="floatLastname">Apellidos</label>
+                                </div>
+                            </div>
+                            <div class="col-auto tag-flex-center">
+                                <a
+                                    href="../pages/check_in.html"
+                                    class="btn btn-primary mb-3 tag-btn tag-btn-blue-light col-sm-12 col-12">CONTINUAR</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tag-login-container-txt">
+                    <p>Si tienes dificultades para encontrar tu número de reservación, comunícate con nuestro centro
+                        de atención telefónica al: +502 2380 9400</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Button trigger modal error -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalError">
+            Modal Error
+        </button>
+
+        <!-- Modal Error -->
+        <div class="modal fade tag-modals tag-modal-error" id="modalError" tabindex="-1" aria-labelledby="modalErrorLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-ico" src="../../public/images/icons/ico_modal-error-x.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-error" id="modalErrorLabel">¡Ups!</h5>
+                        </div>
+                        <!-- <div>
+                            <button type="button" class="btn-close tag-modal-icon-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div> -->
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        Recuerda que podrás realizar check-in 48hrs antes de el día de tu vuelo
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal Verifica Datos Modal-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalErrorDatos">
+            Verifica Datos Modal
+        </button>
+
+        <!-- Modal Verifica Datos Modal -->
+        <div class="modal fade tag-modals tag-modal-error" id="modalErrorDatos" tabindex="-1"
+            aria-labelledby="modalErrorDatosLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-ico" src="../../public/images/icons/ico_modal-error-x.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-error" id="modalErrorDatosLabel">¡Ups!</h5>
+                        </div>
+                        <!-- <div>
+                            <button type="button" class="btn-close tag-modal-icon-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div> -->
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        Verifica que los datos que ingresaste sean correctos.
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger Modal check-in-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCheckIn">
+            Modal check-in
+        </button>
+
+        <!-- Modal Modal check-in-->
+        <div class="modal fade tag-modals tag-modal-chek-in" id="modalCheckIn" tabindex="-1"
+            aria-labelledby="modalCheckInLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-ico" src="../../public/images/icons/ico_modal-error.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-blue-light" id="modalCheckInLabel">¡Ups!</h5>
+                        </div>
+                        <!-- <div>
+                            <button type="button" class="btn-close tag-modal-icon-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div> -->
+                    </div>
+                    <div class="modal-body d-flex justify-content-center text-center">
+                        Debido a que tu vuelo tiene una conexión, deberás hacer Check-in el el aeropuerto, recuerda que debes presentarte 3h antes de la salida de tu vuelo
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal menores-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMenores">
+            Modal menores
+        </button>
+
+        <!-- Modal Modal menores -->
+        <div class="modal fade tag-modals tag-modal-chek-in" id="modalMenores" tabindex="-1"
+            aria-labelledby="modalMenoresLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-ico tag-modal-ico-menores" src="../../public/images/icons/ico_check-in-menores.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-blue-light" id="modalMenoresLabel">Menor sin acompañante/ menor 2 años</h5>
+                        </div>
+                        <!-- <div>
+                            <button type="button" class="btn-close tag-modal-icon-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div> -->
+                    </div>
+                    <div class="modal-body d-flex justify-content-center text-center">
+                        Debido a que tu reservación tiene un menor sin acompañante o infante menor de 2 años, deberás hacer Check-in el el aeropuerto, recuerda que debes presentarte 3h antes de la salida de tu vuelo                    
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger Modal Servicios Especiales-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalServicios">
+            Modal Servicios Especiales
+        </button>
+
+        <!-- Modal Modal Servicios Especiales -->
+        <div class="modal fade tag-modals tag-modal-chek-in" id="modalServicios" tabindex="-1"
+            aria-labelledby="modalServiciosLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-services tag-modal-ico" src="../../public/images/icons/ico_checkin-especiales.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-blue-light" id="modalServiciosLabel">Servicios especiales</h5>
+                        </div>
+                        <!-- <div>
+                            <button type="button" class="btn-close tag-modal-icon-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div> -->
+                    </div>
+                    <div class="modal-body d-flex justify-content-center text-center">
+                        Debido a que tu reservación contiene servicios especiales, deberás hacer Check-in el el aeropuerto, recuerda que debes presentarte 3h antes de la salida de tu vuelo                    
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger Modal Tercero-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTerceros">
+            Modal Terceros
+        </button>
+
+        <!-- Modal Modal Tercero -->
+        <div class="modal fade tag-modals tag-modal-chek-in" id="modalTerceros" tabindex="-1"
+            aria-labelledby="modalTercerosLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-icon-colse">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="tag-modal-services tag-modal-ico" src="../../public/images/icons/ico_modal-error.svg" alt="" srcset="">
+                            <h5 class="modal-title tag-txt-blue-light" id="modalTercerosLabel">Title</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center text-center">
+                        Debido a que tu vuelo lo compraste mediante un tercero, deberás hacer Check-in el el aeropuerto, recuerda que debes presentarte 3h antes de la salida de tu vuelo                    
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary tag-btn-modal-cerrar"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../../public/js/bootstrap.min.js"></script> -->
+    <script src="../../public/js/bootstrap.js"></script>
+    <script src="../../public/js/tag-core.js"></script>
+</body>
+
+</html>
